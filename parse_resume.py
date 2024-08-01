@@ -126,4 +126,38 @@ def parse_resume_to_json(resume_text):
                 "description": "Developed a comprehensive hostel management system that efficiently handles student registrations, room allocations, and inventory management.",
                 "technologies": [
                     "PHP",
-                    "MySQL
+                    "MySQL",
+                    "JavaScript",
+                    "HTML",
+                    "CSS"
+                ],
+                "details": "Implemented the back-end using PHP and MySQL, and the front-end using JavaScript, HTML, and CSS to store and retrieve student and hostel information securely."
+            },
+            {
+                "name": "Smart Ticketing System and Overcrowding Control",
+                "description": "Created a smart ticketing system using RFID technology for the ticketing process for public transportation.",
+                "technologies": [
+                    "RFID",
+                    "GSM"
+                ],
+                "details": "Implemented GSM technology to send real-time messages to the transportation authorities and passengers for timely interventions.",
+                "publication": "The research paper has been published in the IEEE Conference"
+            },
+            {
+                "name": "Advancing Landmark Detection: A Vision Transformer Approach",
+                "description": "Developed a deep learning-based advanced ViT image classifier for identifying landmarks.",
+                "technologies": [
+                    "Vision Transformer",
+                    "PyTorch",
+                    "Google Colab"
+                ],
+                "details": "Achieved high accuracy in dynamic conditions by leveraging Vision Transformer architecture, enhancing applications in tourism, navigation, and cultural heritage preservation.",
+                "publication": "The research paper has been accepted at the IEEE Conference"
+            }
+        ]
+    }
+    return resume_json
+
+# Output the parsed JSON
+parsed_resume = parse_resume_to_json(resume_text)
+print(parsed_resume)
